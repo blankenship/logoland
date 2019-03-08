@@ -192,11 +192,9 @@ button {
 /* FAQs */
 
 .faq {
-	background: url(@images/logoland.pattern.png) repeat top left;
-	background-size: 75px 75px;
 	display: grid;
 	grid-column-gap: 10%;
-	grid-template-columns: 45% 45%;
+	grid-template-columns: 40% 50%;
 }
 
 dl dt { 
@@ -257,7 +255,7 @@ footer ul li {
 
 /* tiny screens */
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
 
 	/* CONTAINERS */
 
@@ -266,7 +264,7 @@ footer ul li {
 	}
 
 	header aside { 
-		height: 50vmax;
+		height: 40vmax;
 	}
 
 	header main {
@@ -282,16 +280,16 @@ footer ul li {
 	}
 
 	h2 { 
-		font: 700 2.5rem/3rem 'Poppins', sans-serif; 
+		font: 700 2.25rem/2.75rem 'Poppins', sans-serif; 
 	}
 
 	h3 { 
-		font: 700 2rem/2.5rem 'Poppins', sans-serif;
+		font: 700 1.85rem/2.25rem 'Poppins', sans-serif;
 		margin-bottom: 1rem;
 	}
 
 	h3 strong {
-		font: 400 4rem/5rem 'Poppins', sans-serif;
+		font: 400 6rem/6rem 'Poppins', sans-serif;
 	}
 
 	p, li { 
