@@ -32,7 +32,7 @@ body.borderlands {
 
 header {
 	margin: 0 auto;
-	padding: 0 4rem 0 2rem;
+	padding: 0 4rem 0 0;
 }
 
 section {
@@ -51,8 +51,6 @@ section.medium {
 }
 
 /* TYPOGRAPHY */
-
-h1, h2, h3 { display: block; }
 
 h1 { 
 	font: 700 4.5rem/4.5rem 'Poppins', sans-serif; 
@@ -148,7 +146,7 @@ section.center {
 }
 
 header aside {
-	background: url(@images/logoland.hero.jpg) no-repeat center top;
+	background: url(@images/logoland.hero.jpg) no-repeat center left;
 	background-size: contain;
 }
 
@@ -226,9 +224,8 @@ figure img {
 	width: calc(100% - 1rem);
 }
 
-aside#flow {
-/*	background: url(@images/logoland.biz.flow.png) no-repeat center center;
-	background-size: cover;*/
+aside#flow img {
+	width: 100%;
 }
 
 /* FOOTER */
