@@ -151,7 +151,7 @@ header aside {
 }
 
 header main {
-	padding-bottom: 2rem;
+	padding: 0 0 2rem 2rem;
 }
 
 /* LAYOUT */
