@@ -266,7 +266,7 @@ footer ul li {
 	}
 
 	header aside { 
-		max-height: 25vmax;
+		height: 50vmax;
 	}
 
 	header main {
@@ -329,10 +329,6 @@ footer ul li {
 
 	section.center {
 		padding-bottom: 3rem;
-	}
-
-	aside {
-		min-height: 75vmax;
 	}
 
 	/* FAQs */
