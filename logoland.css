@@ -202,8 +202,8 @@ button {
 }
 
 dl dt { 
-	background: #eee;
-	color: #222;
+	background: #222;
+	color: #eee;
 	display: inline-block;
 	font-weight: bold; 
 	margin-bottom: .5rem;
