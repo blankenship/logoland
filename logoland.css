@@ -1,0 +1,398 @@
+/* 
+
+		***   ***   ***
+		***   ***   ***
+		***   ***  	  
+		***   *********
+		***   *********
+		***   
+		***************
+		***************
+
+
+What	LogoLand
+Where	http://logoland.biz
+Why		Get a Professional Logo at an Affordable Price in About a Week
+Who		Blankenship Office
+When	Version: 1.0
+
+*/
+
+
+body {
+	font-family: 'Work', sans-serif;
+	margin: 0 auto;
+}
+
+body.borderlands {
+	border-top: 1rem solid #222;
+}
+
+/* CONTAINERS */
+
+header {
+	margin: 0 auto;
+	padding: 0 4rem 0 2rem;
+}
+
+section {
+	margin: 0 auto;
+	padding: 2rem 4rem;
+}
+
+section.dark {
+	background: #222;
+	color: #eee;
+}
+
+section.medium {
+	background: #ddd;
+	color: #222;
+}
+
+/* TYPOGRAPHY */
+
+h1, h2, h3 { display: block; }
+
+h1 { 
+	font: 700 4.5rem/4.5rem 'Poppins', sans-serif; 
+	letter-spacing: -2px;
+}
+
+h2 { 
+	font: 700 3rem/3.5rem 'Poppins', sans-serif; 
+	letter-spacing: -1px;
+}
+
+h3 { 
+	font: 700 2.5rem/3rem 'Poppins', sans-serif;
+	letter-spacing: -1px;
+	margin-bottom: 1.25rem;
+}
+
+h3 strong {
+	font: 400 5rem/6rem 'Poppins', sans-serif;
+}
+
+p, li { 
+	font: 1.5rem/2.1rem 'Work', sans-serif;
+}
+
+p strong { 
+	font: 800 1.5rem/2.1rem 'Poppins', sans-serif;
+	letter-spacing: .01em;
+}
+
+dd, dt { 
+	font: 1.25rem/1.75rem 'Work', sans-serif;
+} 
+
+ul, ol {
+	list-style-position: outside;
+	margin: 0;
+	padding: 0;
+}
+
+ol li { 
+	margin: 0 0 1.75rem; 
+}
+
+a { 
+	color: inherit;
+	border-bottom: 2px solid #777;
+	padding-bottom: 1px;
+	text-decoration: none; 
+}
+
+h1 a,
+h2 a, 
+h3 a {
+	border: 0 none;
+}
+
+h1 a:hover { 
+	color: #777; 
+}
+
+h3 a {
+	color: #999;
+}
+
+.gradient {
+	background: linear-gradient(175deg,#888 0,#222 85%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: rgba(34,34,34,.15);
+}
+
+.center { 
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center; 
+}
+
+/* HERO */
+
+header,
+section.dark,
+section.medium,
+section.light {
+	display: grid;
+	grid-column-gap: 10%;
+	grid-template-columns: 40% 50%;
+}
+
+section.center {
+	display: block;
+	padding-bottom: 6rem;
+}
+
+header aside {
+	background: url(@images/logoland.hero.jpg) no-repeat center top;
+	background-size: contain;
+}
+
+header main {
+	padding-bottom: 2rem;
+}
+
+/* LAYOUT */
+
+section.dark aside,
+section.medium aside,
+section.light aside {
+	padding: 0;
+	text-align: center;
+}
+
+section.dark main,
+section.medium main,
+section.light main {
+	padding: 2rem 2rem 2rem 0;
+}
+
+/* CART STUFF */
+
+button {
+	white-space: nowrap;
+	line-height: 2rem;
+	background: #eee;
+	border: 2px solid #777;
+	border-radius: 3rem;
+	color: #222;
+	cursor: pointer;
+	display: block;
+	font: 700 2rem/2rem 'Poppins', sans-serif; 
+	padding: 1rem 2rem;
+	letter-spacing: .025em;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: all .15s ease;
+	transition: all .15s ease;
+}
+
+/* FAQs */
+
+.faq {
+	display: grid;
+	grid-column-gap: 10%;
+	grid-template-columns: 45% 45%;
+}
+
+dl dt { 
+	background: rgba(24,24,24,.15);
+	color: #222;
+	display: inline-block;
+	font-weight: bold; 
+	margin-bottom: .5rem;
+	padding: .5rem .75rem;
+}
+
+dl dd { margin-bottom: 2rem; }
+
+
+/* IMAGES */
+
+figure {
+	display: grid;
+	grid-column-gap: 0;
+	grid-template-columns: 33.3333333% 33.3333333% 33.3333333%;
+}
+
+figure img {
+	padding: 0 .5rem;
+	width: calc(100% - 1rem);
+}
+
+aside#flow {
+	background: url(@images/logoland.biz.flow.png) no-repeat center center;
+	background-size: cover;
+}
+
+/* FOOTER */
+
+footer {
+	background: #777;
+	color: #222;
+	margin: 0 auto;
+	padding: 2rem 4rem;
+	text-align: left;
+	display: grid;
+	grid-column-gap: 10%;
+	grid-template-columns: 45% 45%;
+	list-style-type: none;	
+}	
+
+footer ul {  
+	list-style: none;
+}
+
+footer ul:nth-child(2) { 
+	text-align: right; 
+}
+
+footer ul li {
+	font: 1.5rem/2rem 'Work', sans-serif;
+}
+
+footer p { 
+	color: #555;
+}
+
+/* FIN */
+
+
+
+/* tiny screens */
+
+@media (max-width: 1000px) {
+
+	/* CONTAINERS */
+
+	header {
+		padding: 0;
+	}
+
+	header aside { 
+		border: 2rem solid #222;
+	}
+
+	header main {
+		padding: 0 2rem 2rem;
+	}
+
+	section {
+		padding: 1rem 2rem;
+	}
+
+	h1 { 
+		font: 700 4rem/4rem 'Poppins', sans-serif; 
+	}
+
+	h2 { 
+		font: 700 2.5rem/3rem 'Poppins', sans-serif; 
+	}
+
+	h3 { 
+		font: 700 2rem/2.5rem 'Poppins', sans-serif;
+		margin-bottom: 1rem;
+	}
+
+	h3 strong {
+		font: 400 4rem/5rem 'Poppins', sans-serif;
+	}
+
+	p, li { 
+		font: 1.5rem/2.1rem 'Work', sans-serif;
+	}
+
+	dd, dt { 
+		font: 1.25rem/1.75rem 'Work', sans-serif;
+	} 
+
+	ol {
+		list-style-position: inside;
+	}
+
+	ol li { 
+		margin: 0 0 1.75rem; 
+	}
+
+	button {
+		margin-bottom: 4rem;
+	}
+
+	.center { 
+		margin-left: 0;
+		margin-right: 0;
+		text-align: left; 
+	}
+
+	header,
+	section.dark,
+	section.medium,
+	section.light {
+		display: block;
+	}
+
+	section.center {
+		padding-bottom: 3rem;
+	}
+
+	aside {
+		min-height: 75vmax;
+	}
+
+	header {
+		grid-auto-flow: dense;
+	}
+
+	header aside {
+		height: 100%;
+  		order: 100;
+	}
+
+	/* FAQs */
+
+	.faq {
+		display: block;
+	}
+
+	/* IMAGES */
+
+	figure {
+		display: block;
+	}
+
+	figure img {
+		padding: 0;
+		width: 100%;
+	}
+
+	aside#flow {
+		height: 100%;
+	}
+
+	/* FOOTER */
+
+	footer {
+		text-align: center;
+		display: block;
+	}	
+
+	footer ul {  
+		list-style: none;
+	}
+
+	footer ul:nth-child(2) { 
+		text-align: center; 
+	}
+
+	footer ul li {
+		font: 1.5rem/2.5rem 'Work', sans-serif;
+	}
+
+}
+
+/* FIN FO REAL */
+
