@@ -284,12 +284,12 @@ footer ul li {
 	}
 
 	h3 { 
-		font: 700 1.85rem/2.25rem 'Poppins', sans-serif;
+		font: 700 1.75rem/2.25rem 'Poppins', sans-serif;
 		margin-bottom: 1rem;
 	}
 
 	h3 strong {
-		font: 400 6rem/6rem 'Poppins', sans-serif;
+		font: 400 5rem/6.5rem 'Poppins', sans-serif;
 	}
 
 	p, li { 
@@ -300,7 +300,10 @@ footer ul li {
 		font: 1.25rem/1.75rem 'Work', sans-serif;
 	} 
 
-	dl dd { margin-left: 0; }
+	dl dd { 
+		margin-left: 0; 
+		padding-left: .75rem;
+	}
 
 	ol {
 		list-style-position: inside;
