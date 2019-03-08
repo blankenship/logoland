@@ -119,7 +119,7 @@ h3 a {
 }
 
 .gradient {
-	background: linear-gradient(175deg,#888 0,#222 85%);
+	background: linear-gradient(-175deg,#888 0,#222 85%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: rgba(34,34,34,.15);
@@ -234,8 +234,8 @@ aside#flow {
 /* FOOTER */
 
 footer {
-	background: #777;
-	color: #222;
+	background: #222;
+	color: #eee;
 	margin: 0 auto;
 	padding: 2rem 4rem;
 	text-align: left;
@@ -256,13 +256,6 @@ footer ul:nth-child(2) {
 footer ul li {
 	font: 1.5rem/2rem 'Work', sans-serif;
 }
-
-footer p { 
-	color: #555;
-}
-
-/* FIN */
-
 
 
 /* tiny screens */
