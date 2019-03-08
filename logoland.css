@@ -300,6 +300,8 @@ footer ul li {
 		font: 1.25rem/1.75rem 'Work', sans-serif;
 	} 
 
+	dl dd { margin-left: 0; }
+
 	ol {
 		list-style-position: inside;
 	}
