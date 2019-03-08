@@ -195,14 +195,14 @@ button {
 
 .faq {
 	background: url(@images/logoland.pattern.png) repeat top left;
-	background-size: 100px 100px;
+	background-size: 75px 75px;
 	display: grid;
 	grid-column-gap: 10%;
 	grid-template-columns: 45% 45%;
 }
 
 dl dt { 
-	background: rgba(24,24,24,.15);
+	background: #eee;
 	color: #222;
 	display: inline-block;
 	font-weight: bold; 
