@@ -34,7 +34,7 @@
 			<div id="error-message"></div>
 
 			<script>
-			  var stripe = Stripe('pk_test_oeQX0GNqxgu9yEhJL8Sxxwjz', {
+			  var stripe = Stripe('pk_live_iDZKAY11c6DKPMkAW10y1SuW', {
 			    betas: ['checkout_beta_4']
 			  });
 
@@ -43,13 +43,13 @@
 			    // When the customer clicks on the button, redirect
 			    // them to Checkout.
 			    stripe.redirectToCheckout({
-			      items: [{sku: 'sku_Ee9MmQsVDNS8wd', quantity: 1}],
+			      items: [{sku: 'sku_Eer9Wdu6u3yEfI', quantity: 1}],
 
 			      // Note that it is not guaranteed your customers will be redirected to this
 			      // URL *100%* of the time, it's possible that they could e.g. close the
 			      // tab between form submission and the redirect.
-			      successUrl: window.location.protocol + '//logoland.biz/gogologo',
-			      cancelUrl: window.location.protocol + '//logoland.biz/nogologo',
+			      successUrl: window.location.protocol + '//www.logoland.biz/gogologo.html',
+			      cancelUrl: window.location.protocol + '//www.logoland.biz/nogologo.html',
 			    })
 			    .then(function (result) {
 			      if (result.error) {
@@ -134,7 +134,7 @@
 			<div id="error-message"></div>
 
 			<script>
-			  var stripe = Stripe('pk_test_oeQX0GNqxgu9yEhJL8Sxxwjz', {
+			  var stripe = Stripe('pk_live_iDZKAY11c6DKPMkAW10y1SuW', {
 			    betas: ['checkout_beta_4']
 			  });
 
@@ -143,13 +143,13 @@
 			    // When the customer clicks on the button, redirect
 			    // them to Checkout.
 			    stripe.redirectToCheckout({
-			      items: [{sku: 'sku_Ee9MmQsVDNS8wd', quantity: 1}],
+			      items: [{sku: 'sku_Eer9Wdu6u3yEfI', quantity: 1}],
 
 			      // Note that it is not guaranteed your customers will be redirected to this
 			      // URL *100%* of the time, it's possible that they could e.g. close the
 			      // tab between form submission and the redirect.
-			      successUrl: window.location.protocol + '//logoland.biz/gogologo',
-			      cancelUrl: window.location.protocol + '//logoland.biz/nogologo',
+			      successUrl: window.location.protocol + '//www.logoland.biz/gogologo.html',
+			      cancelUrl: window.location.protocol + '//www.logoland.biz/nogologo.html',
 			    })
 			    .then(function (result) {
 			      if (result.error) {
