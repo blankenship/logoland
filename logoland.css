@@ -335,15 +335,6 @@ footer ul li {
 		min-height: 75vmax;
 	}
 
-	header {
-		grid-auto-flow: dense;
-	}
-
-	header aside {
-		height: 100%;
-  		order: 100;
-	}
-
 	/* FAQs */
 
 	.faq {
