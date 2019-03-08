@@ -322,8 +322,7 @@ footer p {
 		margin-bottom: 4rem;
 	}
 
-	.center,
-	#checkout-button /* Stripe */ { 
+	.center { 
 		margin-left: 0;
 		margin-right: 0;
 		text-align: left; 
