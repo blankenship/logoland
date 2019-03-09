@@ -264,6 +264,10 @@ footer ul li {
 	font: 1.5rem/2rem 'Work', sans-serif;
 }
 
+hr {
+	border: 1px solid #ddd;
+	width: 100%;
+}
 
 /* tiny screens */
 
