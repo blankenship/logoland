@@ -12,9 +12,9 @@
 
 What	LogoLand
 Where	http://logoland.biz
-Why		Get a Professional Logo at an Affordable Price in About a Week
+Why		Get a Professional Logo at a Great Price in a Week
 Who		Blankenship Office
-When	Version: 1.0
+When	Version: 1.1
 
 */
 
@@ -137,7 +137,7 @@ section.medium,
 section.light {
 	display: grid;
 	grid-column-gap: 10%;
-	grid-template-columns: 40% 50%;
+	grid-template-columns: 30% 60%;
 }
 
 section.center {
@@ -194,7 +194,7 @@ button {
 .faq {
 	display: grid;
 	grid-column-gap: 10%;
-	grid-template-columns: 40% 50%;
+	grid-template-columns: 30% 60%;
 }
 
 dl dt { 
