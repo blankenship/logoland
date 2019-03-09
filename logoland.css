@@ -268,7 +268,11 @@ footer ul li {
 hr {
 	border: 1px solid #ddd;
 	margin: 0 auto;
-	width: 50%;
+	width: %;
+}
+
+iframe {
+	margin: 0 auto;
 }
 
 /* tiny screens */
