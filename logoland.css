@@ -268,11 +268,12 @@ footer ul li {
 hr {
 	border: 1px solid #ddd;
 	margin: 0 auto;
-	width: %;
+	width: 50%;
 }
 
 iframe {
 	margin: 0 auto;
+	width: 60vw;
 }
 
 /* tiny screens */
@@ -396,6 +397,9 @@ iframe {
 		font: 1.25rem/2.5rem 'Work', sans-serif;
 	}
 
+	iframe {
+		width: 90vw;
+	}
 }
 
 /* FIN FO REAL */
