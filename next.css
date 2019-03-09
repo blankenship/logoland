@@ -145,11 +145,6 @@ section.center {
 	padding-bottom: 6rem;
 }
 
-header aside {
-	background: url(@images/logoland.hero.jpg) no-repeat center left;
-	background-size: contain;
-}
-
 header main {
 	padding: 0 0 2rem 2rem;
 }
@@ -234,9 +229,11 @@ figure.mocks img {
 	width: 100%;
 }
 
+aside#hero img,
 aside#flow img {
 	width: 100%;
 }
+
 
 /* FOOTER */
 
