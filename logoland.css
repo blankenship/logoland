@@ -272,7 +272,7 @@ hr {
 }
 
 iframe {
-	margin: -10px auto 0;
+	margin: -8px 20vw 0 20vw;
 	text-align: center;
 	width: 60vw;
 }
@@ -399,6 +399,7 @@ iframe {
 	}
 
 	iframe {
+		margin: -8px 5vw 0 5vw;
 		width: 90vw;
 	}
 }
