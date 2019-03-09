@@ -55,22 +55,6 @@
 			<p>Welcome to LogoLand &mdash; we&rsquo;re here to help.</p>
 		</main>
 	</header>
-	
-	<section class="dark">
-		<main>
-			<h3>How does it work?</h3>
-			<p>Your logo will be made in the USA by a professional designer under the creative direction of <a href="http://twitter.com/blankenship">Joshua Blankenship</a>, who has lovingly crafted hundreds of logos for clients big and small.</p>
-			<p>Your designer will be quick, capable, and experienced. Probably a good listener, too. It&rsquo;s gonna be awesome.</p>
-		</main>
-		<main>
-			<h3>Logo me? Easy as 123.</h3>
-			<ol>
-				<li>Add the service to your cart and check out. A 100% upfront payment is required to get started.</li>
-				<li>We&rsquo;ll send you a questionnaire about your business, customers, and personal preferences. Your answers will inform the process we use to design your logo.</li>
-				<li>In about 7 days we&rsquo;ll send you your logo, along with everything you need to begin using it, including logo files, a styleguide, and a list of quality, affordable places to get things like business cards, shirts, and websites.</li>
-			</ol>
-		</main>
-	</section>
 
 	<section class="light">
 		<aside id="flow">
@@ -84,13 +68,6 @@
 			<p>We&rsquo;ll also include a short online styleguide outlining how to use the logo, what colors go with it, and a few other guidelines to make sure you&rsquo;re using your new logo well. And we&rsquo;ll conveniently put it all in a meticulously-organized Google Drive folder to share with anyone who needs it.</p>
 		</main>
 	</section>
-
-	<figure class="mocks">
-		<img src="@images/mock.altitude.card.jpg">
-		<img src="@images/mock.altitude.sign.jpg">
-		<img src="@images/mock.altitude.watch.jpg">
-		<img src="@images/mock.altitude.van.jpg">
-	</figure>
 
 	<section>
 		<h2 class="center">LogoLand is for&nbsp;Lovers</h2>
@@ -116,6 +93,30 @@
 		</figure>
 	</section>
 
+
+	<figure class="mocks">
+		<h2 class="center">LogoLand is for&nbsp;Lovers</h2>
+		<img src="@images/mock.altitude.card.jpg">
+		<img src="@images/mock.altitude.sign.jpg">
+		<img src="@images/mock.altitude.watch.jpg">
+		<img src="@images/mock.altitude.van.jpg">
+	</figure>
+	
+	<section class="dark">
+		<main>
+			<h3>How does it work?</h3>
+			<p>Your logo will be made in the USA by a professional designer under the creative direction of <a href="http://twitter.com/blankenship">Joshua Blankenship</a>, who has lovingly crafted hundreds of logos for clients big and small.</p>
+			<p>Your designer will be quick, capable, and experienced. Probably a good listener, too. It&rsquo;s gonna be awesome.</p>
+		</main>
+		<main>
+			<h3>Logo me? Easy as 123.</h3>
+			<ol>
+				<li>Add the service to your cart and check out. A 100% upfront payment is required to get started.</li>
+				<li>We&rsquo;ll send you a questionnaire about your business, customers, and personal preferences. Your answers will inform the process we use to design your logo.</li>
+				<li>In about 7 days we&rsquo;ll send you your logo, along with everything you need to begin using it, including logo files, a styleguide, and a list of quality, affordable places to get things like business cards, shirts, and websites.</li>
+			</ol>
+		</main>
+	</section>
 
 	<section class="dark">
 		<div>
@@ -162,49 +163,6 @@
 			<h3>An Affordable Price</h3>
 			<p>Yep. Only $1499. [puts on The Numbers Guy hat] &ldquo;You know, if we amortize the cost over the next year, that&rsquo;s less than $125/mn for a professional logo we can use everywhere.&rdquo;</p>
 			<p>You probably pay more for your cellphone bill. (And you don&rsquo;t even <em>like</em> getting phone calls.)</p>
-		</div>
-	</section>
-
-	<section class="dark center">
-
-		<div>
-			<h3><strong>Yep, still only $1499</strong></h3>
-			
-			<!-- Load Stripe.js on your website. -->
-			<script src="https://js.stripe.com/v3"></script>
-
-			<!-- Create a button that your customers click to complete their purchase. -->
-			<button id="checkout-button-z" class="center" role="link">Add to Cart</button>
-			<div id="error-message"></div>
-
-			<script>
-			  var stripe = Stripe('pk_live_iDZKAY11c6DKPMkAW10y1SuW', {
-			    betas: ['checkout_beta_4']
-			  });
-
-			  var checkoutButton = document.getElementById('checkout-button-z');
-			  checkoutButton.addEventListener('click', function () {
-			    // When the customer clicks on the button, redirect
-			    // them to Checkout.
-			    stripe.redirectToCheckout({
-			      items: [{sku: 'sku_Eer9Wdu6u3yEfI', quantity: 1}],
-
-			      // Note that it is not guaranteed your customers will be redirected to this
-			      // URL *100%* of the time, it's possible that they could e.g. close the
-			      // tab between form submission and the redirect.
-			      successUrl: window.location.protocol + '//www.logoland.biz/gogologo.html',
-			      cancelUrl: window.location.protocol + '//www.logoland.biz/nogologo.html',
-			    })
-			    .then(function (result) {
-			      if (result.error) {
-			        // If `redirectToCheckout` fails due to a browser or network
-			        // error, display the localized error message to your customer.
-			        var displayError = document.getElementById('error-message');
-			        displayError.textContent = result.error.message;
-			      }
-			    });
-			  });
-			</script>
 		</div>
 	</section>
 
