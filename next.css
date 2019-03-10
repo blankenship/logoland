@@ -45,6 +45,11 @@ section {
 	color: #eee;
 }
 
+.bordered {
+	border-bottom: #eee;
+}
+
+
 /* TYPOGRAPHY */
 
 h1 { 
