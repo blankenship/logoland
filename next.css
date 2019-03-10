@@ -142,8 +142,8 @@ button {
 	cursor: pointer;
 	/*display: block;*/
 	font: 700 2rem/2rem 'Poppins', sans-serif; 
-	margin: 4rem auto;
-	padding: 1rem 2rem;
+	margin: 3rem auto 4rem;
+	padding: 1.5rem 2rem;
 	text-decoration: none;
 	text-transform: uppercase;
 	-webkit-transition: all .15s ease;
@@ -164,8 +164,8 @@ button .icon {
 	color: #222;
 	display: inline-block;
 	line-height: 2rem;
-	right: 30px;
-	top: 50%;
+	right: 0;
+	top: 0;
 	transform: translateY(-50%);
 	transition: transform .25s cubic-bezier(.165,.84,.44,1);
 }
