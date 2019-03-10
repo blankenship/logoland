@@ -46,7 +46,7 @@ section {
 }
 
 .bordered {
-	border-bottom: #eee;
+	border-bottom: 1px solid #eee;
 }
 
 
