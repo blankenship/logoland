@@ -159,15 +159,16 @@ button a {
 }
 
 button .icon {
-	width: 2rem;
-	height: 2rem;
 	color: #222;
 	display: inline-block;
+	font: 700 2rem/2rem
+	height: 2rem;
 	line-height: 2rem;
 	right: 0;
 	top: 0;
 	transform: translateY(-50%);
 	transition: transform .25s cubic-bezier(.165,.84,.44,1);
+	width: 2rem;
 }
 
 
