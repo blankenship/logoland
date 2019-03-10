@@ -66,7 +66,7 @@ h3 {
 }
 
 h3 strong {
-	font: 700 4rem/4rem 'Poppins', sans-serif;
+	font: 400 4rem/4rem 'Poppins', sans-serif;
 	margin-bottom: 4rem;
 }
 
@@ -162,8 +162,8 @@ button a {
 
 .faq {
 	display: block;
-	margin: 4rem auto;
-	width: 50%;
+	margin: 6rem auto;
+	width: 75vw;
 }
 
 dl dt { 
