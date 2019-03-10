@@ -181,6 +181,8 @@ figure {
 }
 
 figure img {
+    display: table-cell; 
+    vertical-align: middle;
 	width: 100%;
 }
 
@@ -244,6 +246,18 @@ hr {
 	margin: 0 auto;
 	width: 75%;
 }
+
+/* medium screens */
+
+@media (max-width: 1000px) {
+
+	.faq {
+		margin: 4.5rem auto;
+		width: 75%;
+		}
+
+}
+
 
 /* tiny screens */
 
