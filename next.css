@@ -47,7 +47,7 @@ section {
 
 .bordered {
 	border-bottom: 1px solid #ddd;
-	padding-bottom: 4rem;
+	padding-bottom: 3rem;
 }
 
 
@@ -143,7 +143,6 @@ button {
 	white-space: nowrap;
 	line-height: 2rem;
 	background: #eee;
-	border: 2px solid #777;
 	color: #222;
 	cursor: pointer;
 	/*display: block;*/
@@ -151,7 +150,6 @@ button {
 	margin: 3rem auto 4rem;
 	padding: 1.5rem 2rem;
 	text-decoration: none;
-	text-transform: uppercase;
 	-webkit-transition: all .15s ease;
 	transition: all .15s ease;
 }
@@ -162,19 +160,6 @@ button.center {
 button a { 
 	border: none 0;
 	text-align: left;
-}
-
-button .icon {
-	color: #222;
-	display: inline-block;
-	font: 700 2rem/2rem
-	height: 2rem;
-	line-height: 2rem;
-	right: 0;
-	top: 0;
-	transform: translateY(-50%);
-	transition: transform .25s cubic-bezier(.165,.84,.44,1);
-	width: 2rem;
 }
 
 
