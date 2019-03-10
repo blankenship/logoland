@@ -140,11 +140,10 @@ button {
 	border: 2px solid #777;
 	color: #222;
 	cursor: pointer;
-	display: block;
+	/*display: block;*/
 	font: 700 2rem/2rem 'Poppins', sans-serif; 
-	margin-bottom: 3rem;
+	margin: 4rem auto;
 	padding: 1rem 2rem;
-	letter-spacing: .025em;
 	text-decoration: none;
 	text-transform: uppercase;
 	-webkit-transition: all .15s ease;
@@ -156,13 +155,15 @@ button.center {
 }
 button a { 
 	border: none 0;
+	text-align: left;
 }
 
 button .icon {
-	width: 30px;
-	height: 30px;
+	width: 2rem;
+	height: 2rem;
 	color: #222;
 	display: inline-block;
+	line-height: 2rem;
 	right: 30px;
 	top: 50%;
 	transform: translateY(-50%);
