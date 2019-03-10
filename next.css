@@ -37,15 +37,15 @@ header {
 
 section {
 	margin: 0 auto;
-	padding: 2rem 4rem;
+	padding: 0;
 }
 
-section.dark {
+.dark {
 	background: #222;
 	color: #eee;
 }
 
-section.medium {
+.medium {
 	background: #ddd;
 	color: #222;
 }
@@ -193,16 +193,24 @@ dl dd { margin-bottom: 2rem; }
 
 /* IMAGES */
 
-figure {
+figure img {
+	width: 100%;
+}
+
+/* 3UP GRID OF LOGOS */
+
+figure.logos{
 	display: grid;
 	grid-column-gap: 0;
 	grid-template-columns: 33.3333333% 33.3333333% 33.3333333%;
 }
 
-figure img {
+figure.logos img {
 	padding: 0 .5rem;
 	width: calc(100% - 1rem);
 }
+
+/* 2UP GRID OF MOCKS */
 
 figure.mocks {
 	display: grid;
@@ -213,11 +221,6 @@ figure.mocks {
 
 figure.mocks img {
 	padding: 0;
-	width: 100%;
-}
-
-#hero img,
-#flow img {
 	width: 100%;
 }
 
@@ -323,13 +326,6 @@ hr {
 		margin-left: 0;
 		margin-right: 0;
 		text-align: left; 
-	}
-
-	header,
-	section.dark,
-	section.medium,
-	section.light {
-		display: block;
 	}
 
 	section.center {
