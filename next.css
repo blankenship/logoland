@@ -32,7 +32,7 @@ body.borderlands {
 
 header {
 	margin: 0 auto;
-	padding: 0 4rem 0 0;
+	padding: 0;
 }
 
 section {
@@ -63,7 +63,7 @@ h2 {
 }
 
 h3 { 
-	font: 700 2.5rem/3rem 'Poppins', sans-serif;
+	font: 700 2.25rem/2.75rem 'Poppins', sans-serif;
 	letter-spacing: -1px;
 	margin-bottom: 1.25rem;
 }
@@ -137,6 +137,10 @@ h3 a {
 	grid-template-columns: 50% 50%;
 }
 
+.section div {
+	padding: 4rem;
+}
+
 section.center {
 	display: block;
 	padding-bottom: 6rem;
@@ -175,7 +179,7 @@ button {
 
 .faq {
 	display: block;
-	margin: 0 auto;
+	margin: 4rem auto;
 	width: 50%;
 }
 
@@ -192,6 +196,11 @@ dl dd { margin-bottom: 2rem; }
 
 
 /* IMAGES */
+
+figure {
+	margin: 0;
+	padding: 0;
+}
 
 figure img {
 	width: 100%;
@@ -231,11 +240,11 @@ footer {
 	background: #222;
 	color: #eee;
 	margin: 0 auto;
-	padding: 2rem 4rem;
+	padding: 4rem;
 	text-align: left;
 	display: grid;
-	grid-column-gap: 10%;
-	grid-template-columns: 45% 45%;
+	grid-column-gap: 0;
+	grid-template-columns: 50% 50%;
 	list-style-type: none;	
 }	
 
@@ -319,7 +328,12 @@ hr {
 	}
 
 	button {
-		margin-bottom: 4rem;
+		margin: 0 auto 4rem;
+		text-align: center;
+	}
+
+	button a { 
+		border: none 0;
 	}
 
 	.center { 
