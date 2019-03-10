@@ -315,8 +315,7 @@ hr {
 
 	/* IMAGES */
 
-	.section figure {
-		max-height: 35vw;
+	.thirds figure {
 		width: 75%;
 	}
 
