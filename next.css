@@ -280,7 +280,7 @@ hr {
 	}
 
 	.halves div + .halves div {
-		margin-bottom: 0;
+		padding-top: 0;
 	}
 
 	h1 { 
