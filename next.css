@@ -53,12 +53,12 @@ section {
 /* TYPOGRAPHY */
 
 h1 { 
-	font: 700 4.5rem/4.5rem 'Poppins', sans-serif; 
+	font: 700 5rem/5rem 'Poppins', sans-serif; 
 	letter-spacing: -2px;
 }
 
 h2 { 
-	font: 700 3rem/3.5rem 'Poppins', sans-serif; 
+	font: 400 3rem/3.5rem 'Poppins', sans-serif; 
 	letter-spacing: -1px;
 }
 
@@ -112,10 +112,6 @@ h1 a:hover {
 	color: #777; 
 }
 
-h3 a {
-	color: #999;
-}
-
 .gradient {
 	background: linear-gradient(-175deg,#888 0,#222 85%);
 	background-clip: text;
@@ -129,8 +125,6 @@ h3 a {
 	text-align: center; 
 }
 
-/* HERO */
-
 .section {
 	display: grid;
 	grid-column-gap: 0;
@@ -138,24 +132,8 @@ h3 a {
 }
 
 .section div {
-	padding: 4rem;
+	padding: 2rem 4rem;
 }
-
-section.center {
-	display: block;
-	padding-bottom: 6rem;
-}
-
-header main {
-}
-
-/* LAYOUT */
-
-section div {
-}
-
-
-/* CART STUFF */
 
 button {
 	white-space: nowrap;
@@ -167,12 +145,17 @@ button {
 	cursor: pointer;
 	display: block;
 	font: 700 2rem/2rem 'Poppins', sans-serif; 
+	margin: 0 auto;
 	padding: 1rem 2rem;
 	letter-spacing: .025em;
 	text-decoration: none;
 	text-transform: uppercase;
 	-webkit-transition: all .15s ease;
 	transition: all .15s ease;
+}
+
+button a { 
+	border: none 0;
 }
 
 /* FAQs */
@@ -330,10 +313,6 @@ hr {
 	button {
 		margin: 0 auto 4rem;
 		text-align: center;
-	}
-
-	button a { 
-		border: none 0;
 	}
 
 	.center { 
