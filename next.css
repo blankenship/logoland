@@ -158,12 +158,25 @@ button a {
 	border: none 0;
 }
 
+button .icon {
+	width: 24px;
+	height: 24px;
+	background-color: #fff;
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: transform .25s cubic-bezier(.165,.84,.44,1);
+}
+
+
 /* FAQs */
 
 .faq {
 	display: block;
 	margin: 6rem auto;
-	width: 75vw;
+	width: 50%;
 }
 
 dl dt { 
