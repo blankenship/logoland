@@ -51,6 +51,24 @@ section {
 }
 
 
+.halves {
+	display: grid;
+	grid-column-gap: 0;
+	grid-template-columns: 50% 50%;
+}
+
+.thirds {
+	display: grid;
+	grid-column-gap: 0;
+	grid-template-columns: 35% 65%;
+}
+
+.halves div,
+.thirds div {
+	padding: 2rem 5rem;
+}
+
+
 /* TYPOGRAPHY */
 
 h1 { 
@@ -110,16 +128,6 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center; 
-}
-
-.section {
-	display: grid;
-	grid-column-gap: 0;
-	grid-template-columns: 50% 50%;
-}
-
-.section div {
-	padding: 2rem 5rem;
 }
 
 button {
