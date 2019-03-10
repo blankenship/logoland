@@ -66,8 +66,8 @@ h3 {
 }
 
 h3 strong {
-	font: 700 5rem/6rem 'Poppins', sans-serif;
-	
+	font: 700 4rem/4rem 'Poppins', sans-serif;
+	margin-bottom: 4rem;
 }
 
 p, li { 
