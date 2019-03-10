@@ -274,8 +274,13 @@ hr {
 		display: block;
 	}
 
-	.section div {
-		padding: .5rem;
+	.halves div,
+	.thirds div {
+		padding: 1rem;
+	}
+
+	.halves div + .halves div {
+		margin-bottom: 0;
 	}
 
 	h1 { 
@@ -307,12 +312,6 @@ hr {
 		text-align: center;
 	}
 
-	.center { 
-		margin-left: 0;
-		margin-right: 0;
-		text-align: left; 
-	}
-
 
 	/* FAQs */
 
@@ -330,7 +329,10 @@ hr {
 	/* 3UP GRID OF LOGOS */
 
 	figure.logos { display: block; }
-	figure.logos img { width: 100%; }
+	figure.logos img { 
+		padding: 0;
+		width: 100%; 
+	}
 
 	/* FOOTER */
 
