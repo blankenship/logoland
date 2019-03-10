@@ -106,23 +106,6 @@ a {
 	text-decoration: none; 
 }
 
-h1 a,
-h2 a, 
-h3 a {
-	border: 0 none;
-}
-
-h1 a:hover { 
-	color: #777; 
-}
-
-.gradient {
-	background: linear-gradient(-175deg,#888 0,#222 85%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: rgba(34,34,34,.15);
-}
-
 .center { 
 	margin-left: auto;
 	margin-right: auto;
@@ -155,6 +138,7 @@ button {
 button.center {
 	margin: 0 auto;
 }
+
 button a { 
 	border: none 0;
 	text-align: left;
@@ -271,43 +255,15 @@ hr {
 		padding: 1rem;
 	}
 
-	h1 { 
-		font: 700 4rem/4rem 'Poppins', sans-serif; 
-	}
-
-	h2 { 
-		font: 700 2.25rem/2.75rem 'Poppins', sans-serif; 
-	}
-
-	h3 { 
-		font: 700 1.75rem/2.25rem 'Poppins', sans-serif;
-		margin-bottom: 1rem;
-	}
-
-	h3 strong {
-		font: 400 5rem/6.5rem 'Poppins', sans-serif;
-	}
-
-	p, li { 
-		font: 1.5rem/2.1rem 'Work', sans-serif;
-	}
-
-	dd, dt { 
-		font: 1.25rem/1.75rem 'Work', sans-serif;
-	} 
-
-	dl dd { 
-		margin-left: 0; 
-		padding-left: .75rem;
-	}
-
-	ol {
-		list-style-position: inside;
-	}
-
-	ol li { 
-		margin: 0 0 1.75rem; 
-	}
+	h1 			{ font: 700 4rem/4rem 'Poppins', sans-serif; }
+	h2 			{ font: 700 2.25rem/2.75rem 'Poppins', sans-serif; }
+	h3 			{ font: 700 1.75rem/2.25rem 'Poppins', sans-serif; margin-bottom: 1rem; }
+	h3 strong 	{ font: 400 5rem/6.5rem 'Poppins', sans-serif; }
+	p, li 		{ font: 1.5rem/2.1rem 'Work', sans-serif; }
+	dd, dt 		{ font: 1.25rem/1.75rem 'Work', sans-serif;	} 
+	dl dd 		{ margin-left: 0; padding-left: .75rem; }
+	ol 			{ list-style-position: inside; }
+	ol li 		{ margin: 0 0 1.75rem; }
 
 	button {
 		margin: 0 auto 4rem;
@@ -320,9 +276,6 @@ hr {
 		text-align: left; 
 	}
 
-	section.center {
-		padding-bottom: 3rem;
-	}
 
 	/* FAQs */
 
@@ -334,8 +287,14 @@ hr {
 	/* IMAGES */
 
 	.section figure {
-		max-height: 50vw;
+		max-height: 35vw;
+		width: 50%;
 	}
+
+	/* 3UP GRID OF LOGOS */
+
+	figure.logos { display: block; }
+	figure.logos img { width: 100%; }
 
 	/* FOOTER */
 
@@ -344,17 +303,11 @@ hr {
 		display: block;
 	}	
 
-	footer ul {  
-		list-style: none;
-	}
+	footer ul { list-style: none; }
 
-	footer ul:nth-child(2) { 
-		text-align: center; 
-	}
+	footer ul:nth-child(2) { text-align: center; }
 
-	footer ul li {
-		font: 1.25rem/2.5rem 'Work', sans-serif;
-	}
+	footer ul li { font: 1.25rem/2.5rem 'Work', sans-serif; }
 
 }
 
