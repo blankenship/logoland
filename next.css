@@ -269,7 +269,8 @@ hr {
 		padding: 0;
 	}
 
-	.section {
+	.halves,
+	.thirds {
 		display: block;
 	}
 
