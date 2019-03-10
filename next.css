@@ -267,6 +267,10 @@ hr {
 		display: block;
 	}
 
+	.section div {
+		padding: 1rem;
+	}
+
 	h1 { 
 		font: 700 4rem/4rem 'Poppins', sans-serif; 
 	}
@@ -329,6 +333,9 @@ hr {
 
 	/* IMAGES */
 
+	.section figure {
+		max-height: 50vw;
+	}
 
 	/* FOOTER */
 
