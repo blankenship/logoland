@@ -132,12 +132,10 @@ h3 a {
 /* HERO */
 
 header,
-section.dark,
-section.medium,
-section.light {
+section {
 	display: grid;
-	grid-column-gap: 10%;
-	grid-template-columns: 30% 60%;
+	grid-column-gap: 0;
+	grid-template-columns: 50% 50%;
 }
 
 section.center {
@@ -146,23 +144,19 @@ section.center {
 }
 
 header main {
-	padding: 0 0 2rem 2rem;
 }
 
 /* LAYOUT */
 
-section.dark aside,
-section.medium aside,
-section.light aside {
+section div {
+	padding: 2rem 2rem 2rem 0;
+}
+
+section div + image {
 	padding: 0;
 	text-align: center;
 }
 
-section.dark main,
-section.medium main,
-section.light main {
-	padding: 2rem 2rem 2rem 0;
-}
 
 /* CART STUFF */
 
@@ -187,9 +181,9 @@ button {
 /* FAQs */
 
 .faq {
-	display: grid;
-	grid-column-gap: 10%;
-	grid-template-columns: 30% 60%;
+	display: block;
+	margin: 0 auto;
+	width: 50%;
 }
 
 dl dt { 
@@ -229,8 +223,8 @@ figure.mocks img {
 	width: 100%;
 }
 
-aside#hero img,
-aside#flow img {
+#hero img,
+#flow img {
 	width: 100%;
 }
 
