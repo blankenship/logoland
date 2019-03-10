@@ -141,7 +141,7 @@ button {
 	cursor: pointer;
 	display: block;
 	font: 700 2rem/2rem 'Poppins', sans-serif; 
-	margin: 0 auto;
+	margin: 0;
 	padding: 1rem 2rem;
 	letter-spacing: .025em;
 	text-decoration: none;
@@ -150,6 +150,9 @@ button {
 	transition: all .15s ease;
 }
 
+button.center {
+	margin: 0 auto;
+}
 button a { 
 	border: none 0;
 }
