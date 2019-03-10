@@ -258,8 +258,13 @@ hr {
 	h1 			{ font: 700 4rem/4rem 'Poppins', sans-serif; }
 	h2 			{ font: 700 2.25rem/2.75rem 'Poppins', sans-serif; }
 	h3 			{ font: 700 2rem/2.5rem 'Poppins', sans-serif; margin-bottom: 1rem; }
-	h3 strong 	{ font: 400 3rem/3.5rem 'Poppins', sans-serif; }
-	h3.center	{ text-align: left; margin-left: 10%; }
+	h3 strong 	{ 
+		font: 400 4rem/5rem 'Poppins', sans-serif; 
+		margin: 0 auto;
+		text-align: center;
+		width: 75%;
+	}
+	h3.center	{ margin-left: auto; margin-right: auto; width: 75%; }
 	p, li 		{ font: 1.5rem/2.1rem 'Work', sans-serif; }
 	dd, dt 		{ font: 1.25rem/1.75rem 'Work', sans-serif;	} 
 	dl dd 		{ margin-left: 0; padding-left: .75rem; }
