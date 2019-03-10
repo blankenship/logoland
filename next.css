@@ -161,9 +161,8 @@ button a {
 button .icon {
 	width: 24px;
 	height: 24px;
-	background-color: #fff;
-	display: block;
-	position: absolute;
+	color: #eee;
+	display: inline-block;
 	right: 20px;
 	top: 50%;
 	transform: translateY(-50%);
