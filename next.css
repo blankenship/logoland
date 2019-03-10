@@ -58,6 +58,7 @@ h1 {
 }
 
 h2 { 
+	color: #777;
 	font: 400 3rem/3.5rem 'Poppins', sans-serif; 
 	letter-spacing: -1px;
 }
