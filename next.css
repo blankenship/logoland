@@ -47,7 +47,7 @@ section {
 
 .bordered {
 	border-bottom: 1px solid #ddd;
-	padding-bottom: 3rem;
+	padding-bottom: 2.5rem;
 }
 
 
@@ -263,16 +263,8 @@ hr {
 		padding: 0;
 	}
 
-	header aside { 
-		height: 40vmax;
-	}
-
-	header main {
-		padding: 0 2rem 2rem;
-	}
-
-	section {
-		padding: 1rem 2rem;
+	.section {
+		display: block;
 	}
 
 	h1 { 
@@ -331,23 +323,12 @@ hr {
 	/* FAQs */
 
 	.faq {
-		display: block;
-	}
+		margin: 3rem auto;
+		width: 90%;
+		}
 
 	/* IMAGES */
 
-	figure {
-		display: block;
-	}
-
-	figure img {
-		padding: 0;
-		width: 100%;
-	}
-
-	aside#flow {
-		height: 100%;
-	}
 
 	/* FOOTER */
 
