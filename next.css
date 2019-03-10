@@ -275,12 +275,20 @@ hr {
 	}
 
 	.section div {
-		padding: 1rem;
+		padding: .5rem;
 	}
 
-	h1 			{ font: 700 4rem/4rem 'Poppins', sans-serif; }
-	h2 			{ font: 700 2.25rem/2.75rem 'Poppins', sans-serif; }
-	h3 			{ font: 700 2rem/2.5rem 'Poppins', sans-serif; margin-bottom: 1rem; }
+	h1 { 
+		font: 700 4rem/4rem 'Poppins', sans-serif; 
+	}
+	h2 { 
+		font: 700 2.25rem/2.75rem 'Poppins', sans-serif; 
+	}
+	h3 { 
+		font: 700 2rem/2.5rem 'Poppins', sans-serif; 
+		margin-bottom: 1rem; 
+		text-align;
+	}
 	h3 strong 	{ 
 		font: 400 4rem/5rem 'Poppins', sans-serif; 
 		margin: 0 auto;
