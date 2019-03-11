@@ -253,6 +253,10 @@ hr {
 
 @media (max-width: 1000px) {
 
+	.halves {
+		display: block;
+	}
+
 	.faq {
 		margin: 4.5rem auto;
 		width: 75%;
