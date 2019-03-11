@@ -247,6 +247,13 @@ hr {
 	width: 75%;
 }
 
+body.borderlands section {
+	margin: 0 auto;
+	width: 50vw;
+	max-width: 800px;
+}
+
+
 /* medium screens */
 
 @media (max-width: 1000px) {
@@ -358,6 +365,13 @@ hr {
 	footer ul:nth-child(2) { text-align: center; }
 
 	footer ul li { font: 1.25rem/2.5rem 'Work', sans-serif; }
+
+
+	body.borderlands section {
+		margin: 0 auto;
+		width: 90vw;
+		max-width: 90vw;
+	}
 
 }
 
