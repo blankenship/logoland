@@ -50,7 +50,6 @@ section {
 	padding-bottom: 2.5rem;
 }
 
-
 .halves {
 	display: grid;
 	grid-column-gap: 0;
@@ -313,7 +312,7 @@ hr {
 
 	button {
 		display: block;
-		margin: 2rem auto 4rem;
+		margin: 4rem auto;
 		text-align: center;
 	}
 
@@ -329,7 +328,7 @@ hr {
 	/* IMAGES */
 
 	.thirds figure #hand {
-		max-height: 50vmax;
+		max-height: 35vmax;
 		width: 85%;
 	}
 
@@ -345,6 +344,7 @@ hr {
 		padding: 0;
 		width: 100%; 
 	}
+
 
 	/* FOOTER */
 
