@@ -123,6 +123,8 @@ a {
 	text-decoration: none; 
 }
 
+h1 a { border: none 0; }
+
 .center { 
 	margin-left: auto;
 	margin-right: auto;
@@ -248,9 +250,9 @@ hr {
 }
 
 body.borderlands section {
-	margin: 0 auto;
-	width: 50vw;
-	max-width: 800px;
+	margin: 0 auto 4rem;
+	width: 60vw;
+	max-width: 900px;
 }
 
 
@@ -368,7 +370,6 @@ body.borderlands section {
 
 
 	body.borderlands section {
-		margin: 0 auto;
 		width: 90vw;
 		max-width: 90vw;
 	}
