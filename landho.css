@@ -331,6 +331,9 @@ body.borderlands section {
 		text-align: center;
 	}
 
+	aside {
+		margin: 0 auto 4rem;
+	}
 
 	/* FAQs */
 
