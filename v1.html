@@ -1,0 +1,249 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+	<title>LogoLand.biz &middot; Get a Professional Logo at an Affordable Price in About a Week</title>
+	<link rel="icon" href="/@images/logoland.favicon.ico">	
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="user-scalable=1, width=device-width, initial-scale=1.0, maximum-scale=2.0">
+	<meta name="referrer" content="origin">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@blankenship">
+	<meta name="twitter:creator" content="@blankenship">
+	<meta name="twitter:title" content="LogoLand.biz">
+	<meta name="twitter:description" content="Get a professional logo at an affordable price in about a week. Welcome to LogoLand — we’re here to help.">
+	<meta name="twitter:image" content="https://www.logoland.biz/@images/logoland.socialcard.png">
+
+	<meta property="og:title" content="LogoLand">
+	<meta property="og:site_name" content="LogoLand">	
+	<meta property="og:description" content="Get a Professional Logo at an Affordable Price in About a Week">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://logoland.biz">
+	<meta property="og:image" content="https://www.logoland.biz/@images/logoland.socialcard.png">
+
+	<meta name="description" content="Get a Professional Logo at an Affordable Price in About a Week">
+	<meta id="MetaKeywords" name="KEYWORDS" content="Greenville SC, Village of West Greenville, Yeah that Greenville, logo designer, logo service, affordable logo, cheap logo, logo styleguide, professional designer, hire logo designer">
+
+	<link rel="stylesheet" type="text/css" href="logoland.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135909988-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-135909988-1');
+	</script>
+</head>
+
+<body>
+	<header>
+		<aside></aside>
+		<main>
+			<h1>LogoLand</h1>
+			<h2 class="gradient">Get a Professional Logo at&nbsp;an <strong>Affordable Price</strong> in About a Week</h2>
+			<p>We believe every business benefits from working with an experienced designer to create a memorable logo. But we also know small businesses don&rsquo;t always have big margins to hire professional designers.</p>
+			<p>Welcome to LogoLand &mdash; we&rsquo;re here to help.</p>
+		</main>
+	</header>
+
+	<section class="dark">
+		<div>
+			<h3 class="center"><strong>$1499</strong></h3>
+
+			<!-- Load Stripe.js on your website. -->
+			<script src="https://js.stripe.com/v3"></script>
+
+			<!-- Create a button that your customers click to complete their purchase. -->
+			<button id="checkout-button" class="center" role="link">Add to Cart</button>
+			<div id="error-message"></div>
+
+			<script>
+			  var stripe = Stripe('pk_live_iDZKAY11c6DKPMkAW10y1SuW', {
+			    betas: ['checkout_beta_4']
+			  });
+
+			  var checkoutButton = document.getElementById('checkout-button');
+			  checkoutButton.addEventListener('click', function () {
+			    // When the customer clicks on the button, redirect
+			    // them to Checkout.
+			    stripe.redirectToCheckout({
+			      items: [{sku: 'sku_Eer9Wdu6u3yEfI', quantity: 1}],
+
+			      // Note that it is not guaranteed your customers will be redirected to this
+			      // URL *100%* of the time, it's possible that they could e.g. close the
+			      // tab between form submission and the redirect.
+			      successUrl: window.location.protocol + '//www.logoland.biz/gogologo.html',
+			      cancelUrl: window.location.protocol + '//www.logoland.biz/nogologo.html',
+			    })
+			    .then(function (result) {
+			      if (result.error) {
+			        // If `redirectToCheckout` fails due to a browser or network
+			        // error, display the localized error message to your customer.
+			        var displayError = document.getElementById('error-message');
+			        displayError.textContent = result.error.message;
+			      }
+			    });
+			  });
+			</script>
+		</div>
+
+		<div>
+			<h3>An Affordable Price</h3>
+			<p>Yep. Only $1499. [puts on The Numbers Guy hat] &ldquo;You know, if we amortize the cost over the next year, that&rsquo;s less than $125/mn for a professional logo we can use everywhere.&rdquo;</p>
+			<p>You probably pay more for your cellphone bill. (And you don&rsquo;t even <em>like</em> getting phone calls.)</p>
+		</div>
+	</section>
+
+	<section class="light">
+		<aside id="flow">
+			<img src="@images/logoland.flow.png" alt="LogoLand.biz Process">
+		</aside>
+		<main>
+			<h3>OK! So what do I get?</h3>
+			<p>You&rsquo;ll get a custom logo, unique to your business, in vector AI, EPS, and PNG file formats, ready to put on your awesome business cards and shirts, drop into your new shiny website theme, and share on social media.</p>
+
+			<h3>But wait &mdash; there&rsquo;s&nbsp;more!</h3>
+			<p>We&rsquo;ll also include a short online styleguide outlining how to use the logo, what colors go with it, and a few other guidelines to make sure you&rsquo;re using your new logo well. And we&rsquo;ll conveniently put it all in a meticulously-organized Google Drive folder to share with anyone who needs it.</p>
+		</main>
+	</section>
+
+	<section class="dark">
+		<main>
+			<h3>How does it work?</h3>
+			<p>Your logo will be made in the USA by a professional designer under the creative direction of <a href="http://twitter.com/blankenship">Joshua Blankenship</a>, who has lovingly crafted hundreds of logos for clients big and small.</p>
+			<p>Your designer will be quick, capable, and experienced. Probably a good listener, too. It&rsquo;s gonna be awesome.</p>
+		</main>
+		<main>
+			<h3>Logo me? Easy as 123.</h3>
+			<ol>
+				<li>Add the service to your cart and check out. A 100% upfront payment is required to get started.</li>
+				<li>We&rsquo;ll send you a questionnaire about your business, customers, and personal preferences. Your answers will inform the process we use to design your logo.</li>
+				<li>In about 7 days we&rsquo;ll send you your logo, along with everything you need to begin using it, including logo files, a styleguide, and a list of quality, affordable places to get things like business cards, shirts, and websites.</li>
+			</ol>
+		</main>
+	</section>
+
+	<section>
+		<h2 class="center">LogoLand is for&nbsp;Lovers</h2>
+		<figure>
+			<img src="@images/logos.cee.png" alt="Center for Educational Equality">
+			<img src="@images/logos.altitude.png" alt="Altitude Medical">
+			<img src="@images/logos.madeforhumans.png" alt="Made for Humans">
+			<img src="@images/logos.open.png" alt="Open CLub">
+			<img src="@images/logos.jwindsors.png" alt="J. Windsor's Salon">
+			<img src="@images/logos.village.png" alt="Village Church">
+			<img src="@images/logos.shadetree.png" alt="Shadetree Technology">
+			<img src="@images/logos.mosaic.png" alt="Mosaic Boston">
+			<img src="@images/logos.atterbury.png" alt="Atterbury Family Farm">
+			<img src="@images/logos.bridge.png" alt="Balanced Bridge">
+			<img src="@images/logos.3DF.png" alt="Three Dog Farm">
+			<img src="@images/logos.westend.png" alt="The Historic West End">
+			<img src="@images/logos.parkview.png" alt="Parkview Theater">
+			<img src="@images/logos.gardenerbunn.png" alt="Gardener Bunn">
+			<img src="@images/logos.soma.png" alt="South Main Business District">
+			<img src="@images/logos.wrench.png" alt="Village Wrench">
+			<img src="@images/logos.blueoaks.png" alt="Blueoaks Church">
+			<img src="@images/logos.memento.png" alt="Memento Crypto">
+		</figure>
+	</section>
+
+	<section class="dark center">
+
+		<div>
+			<h3><strong>Yep, still only $1499</strong></h3>
+			
+			<!-- Load Stripe.js on your website. -->
+			<script src="https://js.stripe.com/v3"></script>
+
+			<!-- Create a button that your customers click to complete their purchase. -->
+			<button id="checkout-button-z" class="center" role="link">Add to Cart</button>
+			<div id="error-message"></div>
+
+			<script>
+			  var stripe = Stripe('pk_live_iDZKAY11c6DKPMkAW10y1SuW', {
+			    betas: ['checkout_beta_4']
+			  });
+
+			  var checkoutButton = document.getElementById('checkout-button-z');
+			  checkoutButton.addEventListener('click', function () {
+			    // When the customer clicks on the button, redirect
+			    // them to Checkout.
+			    stripe.redirectToCheckout({
+			      items: [{sku: 'sku_Eer9Wdu6u3yEfI', quantity: 1}],
+
+			      // Note that it is not guaranteed your customers will be redirected to this
+			      // URL *100%* of the time, it's possible that they could e.g. close the
+			      // tab between form submission and the redirect.
+			      successUrl: window.location.protocol + '//www.logoland.biz/gogologo.html',
+			      cancelUrl: window.location.protocol + '//www.logoland.biz/nogologo.html',
+			    })
+			    .then(function (result) {
+			      if (result.error) {
+			        // If `redirectToCheckout` fails due to a browser or network
+			        // error, display the localized error message to your customer.
+			        var displayError = document.getElementById('error-message');
+			        displayError.textContent = result.error.message;
+			      }
+			    });
+			  });
+			</script>
+		</div>
+	</section>
+
+	<section class="faq">
+		<h3>Frequently Asked Questions</h3>
+		<dl>
+			<dt>Who do you think you are, what with your affordable logos and such?!</dt>
+			<dd>We&rsquo;re LogoLand, a divison of <a href="http://blankenshipoffice.com">Blankenship Office</a>, an independent design studio in Greenville, SC.</dd>
+
+			<dt>What kinds of businesses can LogoLand help?</dt>
+			<dd>We&rsquo;re aiming to help small businesses, non-profits, authors, musicians, and other moms and pops who want a professional logo, but can’t typically afford working with a professional designer.</dd>
+
+			<dt>How do I know LogoLand is a good fit for my business?</dt>
+			<dd>We design simple, typography-centric logos and minimalist geometric symbols. If you&rsquo;re looking for fancy calligraphy, hand drawn text, or an illustrated character, we&rsquo;re not a good fit. If you&rsquo;re after a solid logo to identify your business &mdash; sturdy stuff that would look good on everything from the side of an 18-wheeler to a business card &mdash; we&rsquo;re your people.</dd>
+		
+			<dt>What if I don&rsquo;t like my logo, man?</dt>
+			<dd>That would be a turbo bummer, but we&rsquo;ve got a pretty great track record of happy clients. Trust the process, trust the designer. We want you to love it. If you like the work above, you&rsquo;re gonna like what we make for you.</dd>
+		
+			<dt>How many revisions are included?</dt>
+			<dd>At this price point, you&rsquo;re not paying for endless rounds of revisions and back and forth &mdash; we gotta eat! We&rsquo;ll include one revision to color, composition, or typography. We reserve the right to bill any requests beyond that revision at an hourly rate.</dd>
+			<dt>What&rsquo;s your refund policy?</dt>
+			<dd>There are no refunds after you purchase this service. You buy it, you buy it. Like a slice of pizza. But way more useful.</dd>
+
+			<dt>$1499 seems like way too much for a logo.</dt>
+			<dd>First, that&rsquo;s not a question. Secondly, cool &mdash; it&rsquo;s your money. We wish you well. </dd>
+		
+			<dt>$1499 seems like way too little for a logo?</dt>
+			<dd>Probably. But we&rsquo;re just <strike>naive</strike> optimistic enough to believe we can deliver a good product at this price point. It&rsquo;s not a full brand identity, and it&rsquo;s not a full-service agency experience; it&rsquo;s a professional logo at an affordable price in about a week.</dd>
+				
+			<dt>My business doesn&rsquo;t have a name yet, is that included?</dt>
+			<dd>No can do, amigo. This is a logo service, not a naming service. If you need help with your business name, brand strategy, brand identity, etc. see the next question...</dd>
+		
+			<dt>Do you offer more than just the logo service?</dt>
+			<dd>We do! Or more specifically, <a href="http://blankenshipoffice.com">Blankenship Office</a> helps new businesses and established organizations build brand identities &mdash; visual, verbal, and visceral. If you know you need a comprehensive design experience, an ongoing design partner, or you&rsquo;re not quite sure what you need, <a href="http://blankenshipoffice.com">please reach out</a>.</dd>
+		</dl>
+	</section>
+
+	<footer>
+		<ul>
+			<li><a href="privacypolicy.html">Privacy Policy</a></li>
+			<li><a href="legal.html">Terms & Conditions</a></li>
+		</ul>
+		
+		<ul>
+			<li><a href="mailto:logoland.biz@gmail.com">logoland.biz at gmail</a></li>
+			<li>&copy;2019 Blankenship Office, LLC.</li>
+		</ul>
+	</footer>
+</body>
+</html>
