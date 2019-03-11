@@ -306,12 +306,14 @@ hr {
 	h3.center	{ margin-left: auto; margin-right: auto; width: 75%; }
 	p, li 		{ font: 1.5rem/2.1rem 'Work', sans-serif; }
 	dd, dt 		{ font: 1.25rem/1.75rem 'Work', sans-serif;	} 
+	dl 			{ padding: 2rem; }
 	dl dd 		{ margin-left: 0; padding-left: .75rem; }
 	ol 			{ list-style-position: inside; }
 	ol li 		{ margin: 0 0 1.75rem; }
 
 	button {
-		margin: 0 auto 4rem;
+		display: block;
+		margin: 2rem auto 4rem;
 		text-align: center;
 	}
 
@@ -323,11 +325,18 @@ hr {
 		width: 90%;
 		}
 
+
 	/* IMAGES */
 
-	.thirds figure {
-		width: 75%;
+	.thirds figure #hand {
+		max-height: 50vmax;
+		width: 85%;
 	}
+
+	.thirds figure #process {
+		width: 100%;
+	}
+
 
 	/* 3UP GRID OF LOGOS */
 
