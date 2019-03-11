@@ -47,62 +47,57 @@
 
 <body>
 	<header class="dark">
-		<div class="section">
+		<div class="thirds">
 			<figure>
-				<img src="@images/logoland.hand.png" alt="LogoLand.biz">
+				<img id="hand" src="@images/logoland.hand.png" alt="LogoLand.biz">
 			</figure>
 			<div>
 				<hgroup>
 					<h1>LogoLand</h1>
-					<h2>Get a Professional Logo at a Great Price in a Week</h2>
+					<h2>One last step &mdash; checkout to finalize your order.</h2>
 				</hgroup>
-				<p>Every business benefits from having a memorable logo. But small businesses don&rsquo;t always have big margins to hire professional designers.</p>
-				<p>Welcome to LogoLand &mdash; we&rsquo;re here to help.</p>
 			</div>
 		</div>
 	</header>
 
 	<section class="center">
+		<h3><strong>$1499</strong></h3>
+		
+		<!-- Load Stripe.js on your website. -->
+		<script src="https://js.stripe.com/v3"></script>
 
-		<div>
-			<h3><strong>$1499</strong></h3>
-			
-			<!-- Load Stripe.js on your website. -->
-			<script src="https://js.stripe.com/v3"></script>
+		<!-- Create a button that your customers click to complete their purchase. -->
+		<button id="checkout-button" class="center" role="link">Checkout</button>
+		<div id="error-message"></div>
 
-			<!-- Create a button that your customers click to complete their purchase. -->
-			<button id="checkout-button" class="center" role="link">Checkout</button>
-			<div id="error-message"></div>
+		<script>
+		  var stripe = Stripe('pk_live_iDZKAY11c6DKPMkAW10y1SuW', {
+		    betas: ['checkout_beta_4']
+		  });
 
-			<script>
-			  var stripe = Stripe('pk_live_iDZKAY11c6DKPMkAW10y1SuW', {
-			    betas: ['checkout_beta_4']
-			  });
+		  var checkoutButton = document.getElementById('checkout-button');
+		  checkoutButton.addEventListener('click', function () {
+		    // When the customer clicks on the button, redirect
+		    // them to Checkout.
+		    stripe.redirectToCheckout({
+		      items: [{sku: 'sku_Eer9Wdu6u3yEfI', quantity: 1}],
 
-			  var checkoutButton = document.getElementById('checkout-button');
-			  checkoutButton.addEventListener('click', function () {
-			    // When the customer clicks on the button, redirect
-			    // them to Checkout.
-			    stripe.redirectToCheckout({
-			      items: [{sku: 'sku_Eer9Wdu6u3yEfI', quantity: 1}],
-
-			      // Note that it is not guaranteed your customers will be redirected to this
-			      // URL *100%* of the time, it's possible that they could e.g. close the
-			      // tab between form submission and the redirect.
-			      successUrl: window.location.protocol + '//www.logoland.biz/gogologo.html',
-			      cancelUrl: window.location.protocol + '//www.logoland.biz/nogologo.html',
-			    })
-			    .then(function (result) {
-			      if (result.error) {
-			        // If `redirectToCheckout` fails due to a browser or network
-			        // error, display the localized error message to your customer.
-			        var displayError = document.getElementById('error-message');
-			        displayError.textContent = result.error.message;
-			      }
-			    });
-			  });
-			</script>
-		</div>
+		      // Note that it is not guaranteed your customers will be redirected to this
+		      // URL *100%* of the time, it's possible that they could e.g. close the
+		      // tab between form submission and the redirect.
+		      successUrl: window.location.protocol + '//www.logoland.biz/gogologo.html',
+		      cancelUrl: window.location.protocol + '//www.logoland.biz/nogologo.html',
+		    })
+		    .then(function (result) {
+		      if (result.error) {
+		        // If `redirectToCheckout` fails due to a browser or network
+		        // error, display the localized error message to your customer.
+		        var displayError = document.getElementById('error-message');
+		        displayError.textContent = result.error.message;
+		      }
+		    });
+		  });
+		</script>
 	</section>
 
 </body>
