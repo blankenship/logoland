@@ -192,6 +192,7 @@ figure img {
 	width: 100%;
 }
 
+
 /* 3UP GRID OF LOGOS */
 
 figure.logos{
@@ -296,10 +297,6 @@ body.borderlands section {
 		padding: 1rem;
 	}
 
-	.halves div + .halves div {
-		padding-top: 0;
-	}
-
 	h1 { 
 		font: 700 4rem/4rem 'Poppins', sans-serif; 
 	}
@@ -345,8 +342,9 @@ body.borderlands section {
 
 	/* IMAGES */
 
-	.thirds figure #hand {
+	.thirds figure#hand {
 		width: 80%;
+		max-height: 40vmax;
 	}
 
 	.thirds figure #process {
