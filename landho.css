@@ -153,6 +153,10 @@ button a {
 	text-align: left;
 }
 
+aside {
+	margin: 0 auto;
+	text-align: center;
+}
 
 /* FAQs */
 
