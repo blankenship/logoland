@@ -160,6 +160,10 @@ button a {
 	margin: 6rem auto;
 }
 
+dl {
+	padding: 2rem 5rem;
+}
+
 dl dt { 
 	background: #222;
 	color: #eee;
