@@ -332,8 +332,8 @@ hr {
 	/* IMAGES */
 
 	.thirds figure #hand {
-/*		max-height: 35vmax;
-*/	}
+		max-height: 35vmax;
+	}
 
 	.thirds figure #process {
 		width: 100%;
