@@ -263,7 +263,7 @@ body.borderlands section {
 
 /* medium screens */
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
 
 	.halves {
 		display: block;
@@ -276,14 +276,10 @@ body.borderlands section {
 
 }
 
-.thirds figure#hand {
-	width: 80%;
-	max-height: 60vmin;
-}
 
 /* tiny screens */
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
 
 	/* CONTAINERS */
 
