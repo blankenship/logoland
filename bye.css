@@ -35,6 +35,16 @@ When	Version: 1.1
     	border-bottom: 1px solid #000;
     }
 
+/* SCRUNCH */
+
+@media (min-width: 1px) and (max-width: 999px) {
+
+	main {
+		display: block;
+		margin: 0 auto 10rem;
+	}
+
+}
     .gallery-container {
       width: 100vw;
       margin: 2rem auto 0;
