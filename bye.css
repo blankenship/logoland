@@ -18,7 +18,7 @@ When	Version: 1.1
 
 */
 
-	body { border-top: 10px solid #222; }
+	body { border-top: 20px solid #222; }
 
     header,
     main {
@@ -37,7 +37,7 @@ When	Version: 1.1
 
     .gallery-container {
       width: 100vw;
-      margin: 0 auto;
+      margin: 2rem auto 0;
       overflow: hidden;
       position: relative;
     }
@@ -78,7 +78,7 @@ When	Version: 1.1
     }
     
     .scroll-container {
-      animation: scroll 40s linear infinite;
+      animation: scroll 60s linear infinite;
     }
     
     /* Optional: Pause animation on hover */
