@@ -1,0 +1,73 @@
+/* 
+
+		***   ***   ***
+		***   ***   ***
+		***   ***  	  
+		***   *********
+		***   *********
+		***   
+		***************
+		***************
+
+
+What	LogoLand
+Where	http://logoland.biz
+Why		Get a Professional Logo at a Great Price in a Week
+Who		Blankenship Office
+When	Version: 1.1
+
+*/
+
+    
+    .gallery-container {
+      width: 70%;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .scroll-container {
+      display: flex;
+      width: max-content; /* Allow content to determine width */
+    }
+    
+    .gallery {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    
+    .gallery li {
+      flex: 0 0 200px; /* Fixed width for each item */
+      margin-right: 20px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .gallery img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+    }
+    
+    /* Animation container */
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-220px * 10)); /* Width of each item (200px) + margin (20px) * number of items */
+      }
+    }
+    
+    .scroll-container {
+      animation: scroll 30s linear infinite;
+    }
+    
+    /* Optional: Pause animation on hover */
+    .scroll-container:hover {
+      animation-play-state: paused;
+    }
