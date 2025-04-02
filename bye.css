@@ -18,6 +18,8 @@ When	Version: 1.1
 
 */
 
+	body { border-top: 10px solid #222; }
+
     header,
     main {
     	margin: 0 auto;
@@ -53,14 +55,14 @@ When	Version: 1.1
     }
     
     .gallery li {
-      flex: 0 0 200px; /* Fixed width for each item */
-      margin-right: 20px;
+      flex: 0 0 300px; /* Fixed width for each item */
+      margin-right: 30px;
       overflow: hidden;
     }
     
     .gallery img {
       width: 100%;
-      height: 150px;
+      height: 300px;
       object-fit: cover;
       display: block;
     }
@@ -71,7 +73,7 @@ When	Version: 1.1
         transform: translateX(0);
       }
       100% {
-        transform: translateX(calc(-220px * 10)); /* Width of each item (200px) + margin (20px) * number of items */
+        transform: translateX(calc(-330px * 32)); /* Width of each item (300px) + margin (30px) * number of items */
       }
     }
     
