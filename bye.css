@@ -42,6 +42,11 @@ When	Version: 1.1
 	main {
 		display: block;
 		margin: 0 auto 10rem;
+	    padding: 5rem 5vw;
+	}
+
+	header {
+	    padding: 5rem 5vw;
 	}
 
 }
