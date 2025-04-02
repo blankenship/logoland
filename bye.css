@@ -20,7 +20,7 @@ When	Version: 1.1
 
     
     .gallery-container {
-      width: 70%;
+      width: 100%;
       margin: 0 auto;
       overflow: hidden;
       position: relative;
@@ -41,9 +41,7 @@ When	Version: 1.1
     .gallery li {
       flex: 0 0 200px; /* Fixed width for each item */
       margin-right: 20px;
-      border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     
     .gallery img {
