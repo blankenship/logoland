@@ -35,21 +35,6 @@ When	Version: 1.1
     	border-bottom: 1px solid #000;
     }
 
-/* SCRUNCH */
-
-@media (min-width: 1px) and (max-width: 999px) {
-
-	main {
-		display: block;
-		margin: 0 auto 10rem;
-	    padding: 5rem 5vw;
-	}
-
-	header {
-	    padding: 5rem 5vw;
-	}
-
-}
     .gallery-container {
       width: 100vw;
       margin: 2rem auto 0;
@@ -100,3 +85,38 @@ When	Version: 1.1
     .scroll-container:hover {
       animation-play-state: paused;
     }
+
+
+    /* SCRUNCH */
+
+@media (min-width: 1px) and (max-width: 999px) {
+
+	main {
+		display: block;
+		margin: 0 auto 10rem;
+	    padding: 5rem 5vw;
+	}
+
+	header {
+	    padding: 5rem 5vw;
+	}
+
+	.gallery li {
+      flex: 0 0 150px; /* Fixed width for each item */
+      margin-right: 25px;
+    }
+    
+    .gallery img {
+      height: 150px;
+    }
+    
+    /* Animation container */
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-175px * 32)); /* Width of each item (150px) + margin (25px) * number of items */
+      }
+    }
+}
