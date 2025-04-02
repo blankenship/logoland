@@ -18,9 +18,23 @@ When	Version: 1.1
 
 */
 
-    
+    header,
+    main {
+    	margin: 0 auto;
+    	padding: 5rem 0;
+    	max-width: 1000px;
+    }
+
+    main {
+    	display: grid;
+    	grid-template-columns: 40% 40%;
+    	grid-column-gap: 20%;
+    	margin-bottom: 10rem;
+    	border-bottom: 1px solid #000;
+    }
+
     .gallery-container {
-      width: 100%;
+      width: 100vw;
       margin: 0 auto;
       overflow: hidden;
       position: relative;
