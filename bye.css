@@ -78,7 +78,7 @@ When	Version: 1.1
     }
     
     .scroll-container {
-      animation: scroll 30s linear infinite;
+      animation: scroll 40s linear infinite;
     }
     
     /* Optional: Pause animation on hover */
