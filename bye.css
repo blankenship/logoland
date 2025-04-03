@@ -31,12 +31,13 @@ When	Version: 1.1
     	display: grid;
     	grid-template-columns: 40% 40%;
     	grid-column-gap: 20%;
-    	margin-bottom: 10rem;
-    	border-bottom: 1px solid #000;
+    	margin-bottom: 5rem;
     }
 
     #bye main h3 { margin-top: 0!important; }
-    
+
+    #bye section.light { border-top: 1px solid #222; }
+
     .gallery-container {
       width: 100vw;
       margin: 2rem auto 0;
