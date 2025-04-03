@@ -35,6 +35,8 @@ When	Version: 1.1
     	border-bottom: 1px solid #000;
     }
 
+    #bye main h3 { margin-top: 0!important; }
+    
     .gallery-container {
       width: 100vw;
       margin: 2rem auto 0;
