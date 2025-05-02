@@ -49,8 +49,8 @@
 <body id="bye">
 
 	<header>
-		<h1>LogoLand is closing!</h1>
-		<h2>It’s been a good run. It’s time to move on. But before we do, one more thing...</h2>
+		<h1>LogoLand is closed for business.</h1>
+		<h2>It’s been a good run. Thanks to six years of amazing customers. Visit <a href="https://warm.design">Warm</a> for your brand design needs. It is more expensive than this was. But it’s better.</h2>
 	</header>
 
 	<div class="gallery-container">
@@ -129,199 +129,13 @@
 		</div>
 	</div>
 
-	<main>
-		<h3>In celebration of six years and hundreds of logos, I’m setting aside 20 “tickets” you can buy now, and use anytime this year. They’re $1,000. Once they’re gone, they’re gone, and LogoLand is done.</h3>
-		<div>
-			<p>Each ticket reserves one LogoLand logo process (you fill out a quick questionnaire, you get a great logo and some loose guidelines and brand suggestions a week later). It’s good anytime until April 1, 2026. Use it for your next venture, give it away, wrap it up for the best white elephant party trick. Think of it as a logo gift card. It’s your last chance to get me to design you a logo for $1,000, which I think is a steal. Thanks for making LogoLand a magical place!</p>
-			<!-- Load Stripe.js on your website. -->
-					<script src="https://js.stripe.com/v3"></script>
-
-					<!-- Create a button that your customers click to complete their purchase. -->
-					<button id="checkout-button" class="center" role="link">Get your ticket</button>
-					<div id="error-message"></div>
-
-					<script>
-					  var stripe = Stripe('pk_live_iDZKAY11c6DKPMkAW10y1SuW', {
-					    betas: ['checkout_beta_4']
-					  });
-
-					  var checkoutButton = document.getElementById('checkout-button');
-					  checkoutButton.addEventListener('click', function () {
-					    // When the customer clicks on the button, redirect
-					    // them to Checkout.
-					    stripe.redirectToCheckout({
-					      items: [{sku: 'sku_Eer9Wdu6u3yEfI', quantity: 1}],
-
-					      // Note that it is not guaranteed your customers will be redirected to this
-					      // URL *100%* of the time, it's possible that they could e.g. close the
-					      // tab between form submission and the redirect.
-					      successUrl: window.location.protocol + '//www.logoland.biz/gogologo.html',
-					      cancelUrl: window.location.protocol + '//www.logoland.biz/nogologo.html',
-					    })
-					    .then(function (result) {
-					      if (result.error) {
-					        // If `redirectToCheckout` fails due to a browser or network
-					        // error, display the localized error message to your customer.
-					        var displayError = document.getElementById('error-message');
-					        displayError.textContent = result.error.message;
-					      }
-					    });
-					  });
-					</script>
-		</div>
-	</main>
-
-
-	<section class="light">
-		<div class="halves">
-			<div>
-				<h3>How does LogoLand work?</h3>
-				<p>Your logo will be made in the USA by <a href="http://blankenship.xyz">Joshua Blankenship</a>, who has lovingly crafted thousands of logos for clients big and small for decades. It will not be made with AI.</p>
-				<p>There&rsquo;s no back and forth, so you can focus on doing what you do best (running your business) and we can focus on what we do best (making you a professional logo at a great price in a week).</p>
-			</div>
-			<div>
-				<h3>Easy as 1 2 3</h3>
-				<ol>
-					<li>Buy a ticket. When you’re ready to redeem it, email <a href="mailto:logoland.biz@gmail.com">logoland.biz at gmail</a> and we’ll get started.</li>
-					<li>Answer a few questions about your business, your customers, and your personal logo preferences.</li>
-					<li>In 7 business days we&rsquo;ll send you your logo. Approve it, and you&rsquo;ll get everything you need to start putting your logo on the stuff you make.</li>
-				</ol>
-			</div>
-		</div>
-	</section>
-
-	<section class="dark">
-		<div class="thirds">
-			<figure>
-				<img id="process" src="@images/logoland.process.png" alt="LogoLand.biz Process">
-			</figure>
-			<div>
-				<h3>What do I get?</h3>
-				<p>You&rsquo;ll get a custom logo, unique to your business, in vector SVG and PNG file formats, ready to print, drop in your website theme, and share on social media.</p>
-
-				<h3>But wait &mdash; there&rsquo;s&nbsp;more!</h3>
-				<p>We&rsquo;ll also include a short online styleguide with details like colors and fonts to make sure you&rsquo;re using your new logo well, and a list of quality, affordable vendors who make stuff like business cards, shirts, and websites. Then we&rsquo;ll conveniently put it all in a meticulously-organized Google Drive folder you can share with anyone who needs it.</p>
-
-				<!-- Create a button that your customers click to complete their purchase. -->
-				<button id="checkout-button" class="center" role="link">Get your ticket</button>
-				<div id="error-message"></div>
-
-				<script>
-				  var stripe = Stripe('pk_live_iDZKAY11c6DKPMkAW10y1SuW', {
-				    betas: ['checkout_beta_4']
-				  });
-
-				  var checkoutButton = document.getElementById('checkout-button');
-				  checkoutButton.addEventListener('click', function () {
-				    // When the customer clicks on the button, redirect
-				    // them to Checkout.
-				    stripe.redirectToCheckout({
-				      items: [{sku: 'sku_Eer9Wdu6u3yEfI', quantity: 1}],
-
-				      // Note that it is not guaranteed your customers will be redirected to this
-				      // URL *100%* of the time, it's possible that they could e.g. close the
-				      // tab between form submission and the redirect.
-				      successUrl: window.location.protocol + '//www.logoland.biz/gogologo.html',
-				      cancelUrl: window.location.protocol + '//www.logoland.biz/nogologo.html',
-				    })
-				    .then(function (result) {
-				      if (result.error) {
-				        // If `redirectToCheckout` fails due to a browser or network
-				        // error, display the localized error message to your customer.
-				        var displayError = document.getElementById('error-message');
-				        displayError.textContent = result.error.message;
-				      }
-				    });
-				  });
-				</script>			
-			</div>
-		</div>
-	</section>
-
-	<section class="faq">
-		<h3 class="center">Frequently Asked Questions</h3>
-		<div class="halves">
-			<dl>
-				<dt>What kinds of businesses can LogoLand help?</dt>
-				<dd>We&rsquo;re aiming to help small businesses, non-profits, podcasters, and other moms and pops who want a professional logo, but can’t typically afford working with a professional designer.</dd>
-
-				<dt>How do I know LogoLand is a good fit for my business?</dt>
-				<dd>We design simple, typography-centric logos and minimalist geometric symbols. If you&rsquo;re looking for fancy calligraphy, hand drawn text, or an illustrated character, we&rsquo;re not a good fit. If you&rsquo;re after a solid logo to identify your business &mdash; sturdy stuff that would look good on everything from the side of an 18-wheeler to a business card &mdash; we&rsquo;re your people.</dd>
-			
-				<dt>What if I don&rsquo;t like my logo, man?</dt>
-				<dd>That would be a turbo bummer, but we&rsquo;ve got a pretty great track record of happy clients. Trust the process, trust the designer. We want you to love it. If you like the work above, you&rsquo;re gonna like what we make for you.</dd>
-			
-				<dt>How many revisions are included?</dt>
-				<dd>You&rsquo;re not paying for endless rounds of revisions &mdash; we gotta eat! We&rsquo;ll include one revision to color, composition, or typography. We reserve the right to bill any requests beyond that revision at an hourly rate.</dd>
-
-				<dt>What&rsquo;s your refund policy?</dt>
-				<dd>There are no refunds after you purchase LogoLand&rsquo;s service.</dd>
-			</dl>
-			<dl>
-				<dt>Who do you think you are, what with your affordable logos and such?!</dt>
-				<dd>We&rsquo;re LogoLand, a service from <a href="http://blankenship.xyz">Joshua Blankenship</a>, an independent designer in Greenville, SC.</dd>
-
-				<dt>$1,000 seems like way too much for a logo.</dt>
-				<dd>First, that&rsquo;s not a question. Secondly, cool &mdash; it&rsquo;s your money. We wish you well. </dd>
-			
-				<dt>$1,000 seems like way too little for a logo?</dt>
-				<dd>Probably. But we&rsquo;re just <strike>naive</strike> optimistic enough to believe we can deliver a good product at this price point. It&rsquo;s not a full brand identity, and it&rsquo;s not a full-service agency experience; it&rsquo;s a professional logo at a great price in a week.</dd>
-					
-				<dt>My business doesn&rsquo;t have a name yet, is that included?</dt>
-				<dd>No can do, amigo. This is a logo service, not a naming service. If you need help with your business name, brand strategy, brand identity, etc. see the next question...</dd>
-			
-				<dt>Do you offer more than just the logo service?</dt>
-				<dd>We do! Or more specifically, <a href="http://warm.design">Warm</a> is a brand design studio in SC/VA. If you know you need a comprehensive design experience, an ongoing design partner, or you&rsquo;re not quite sure what you need, please reach out.</dd>
-			</dl>
-		</div>
-		<aside>
-
-				<!-- Create a button that your customers click to complete their purchase. -->
-				<button id="checkout-button" class="center" role="link">Get your ticket</button>
-				<div id="error-message"></div>
-
-				<script>
-				  var stripe = Stripe('pk_live_iDZKAY11c6DKPMkAW10y1SuW', {
-				    betas: ['checkout_beta_4']
-				  });
-
-				  var checkoutButton = document.getElementById('checkout-button');
-				  checkoutButton.addEventListener('click', function () {
-				    // When the customer clicks on the button, redirect
-				    // them to Checkout.
-				    stripe.redirectToCheckout({
-				      items: [{sku: 'sku_Eer9Wdu6u3yEfI', quantity: 1}],
-
-				      // Note that it is not guaranteed your customers will be redirected to this
-				      // URL *100%* of the time, it's possible that they could e.g. close the
-				      // tab between form submission and the redirect.
-				      successUrl: window.location.protocol + '//www.logoland.biz/gogologo.html',
-				      cancelUrl: window.location.protocol + '//www.logoland.biz/nogologo.html',
-				    })
-				    .then(function (result) {
-				      if (result.error) {
-				        // If `redirectToCheckout` fails due to a browser or network
-				        // error, display the localized error message to your customer.
-				        var displayError = document.getElementById('error-message');
-				        displayError.textContent = result.error.message;
-				      }
-				    });
-				  });
-				</script>		
-		</aside>
-	</section>
-
 	<footer>
 		<ul>
-			<li><a href="privacypolicy.html">Privacy Policy</a></li>
-			<li><a href="legal.html">Terms & Conditions</a></li>
 			<li>&copy;<script>document.write(new Date().getFullYear())</script> Blankenship</li>
 		</ul>
 		
 		<ul>
-			<li><a href="mailto:logoland.biz@gmail.com">logoland.biz at gmail</a></li>
-			<li><a href="http://instagram.com/logoland.biz">Instagram</a></li>
-			<li><a href="http://twitter.com/logolanddotbiz">Twitter</a></li>
+			<li><a href="mailto:joshua@blankenship.xyz">Email</a></li>
 		</ul>
 	</footer>
 </body>
